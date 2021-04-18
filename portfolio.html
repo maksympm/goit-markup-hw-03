@@ -13,99 +13,105 @@
 </head>
 <body>
     <header>
-        <nav class="site-nav">
-            <a class="link logo" href="./index.html"> <span class="logo-clr">Web</span><span class="logo">Studio</span></a>
-    
-            <ul class="list">
-                <li><a class="link" href="./index.html">Студия</a></li>
-                <li><a class="link" href="./portfolio.html">Портфолио</a></li>
-                <li><a class="link" href="">Контакты</a></li>
+        <div class="container main-nav">
+            <nav class="site-nav">
+                <a class="link logo main-nav" href="./index.html"> <span class="logo-clr">Web</span><span
+                        class="logo logo-alt-clr">Studio</span></a>
+                <ul class="nav-list list">
+                    <li class="item"><a class="link" href="./index.html">Студия</a></li>
+                    <li class="item"><a class="link" href="./portfolio.html">Портфолио</a></li>
+                    <li class="item"><a class="link" href="">Контакты</a></li>
+                </ul>
+            </nav>
+            <ul class="list contact-links">
+                <li class="item"><a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                <li class="item"><a class="link" href="tel:+380961111111">+38 096 111 11 11</a></li>
             </ul>
-        </nav>
-        <ul class="list contact-links">
-            <li><a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-            <li><a class="link" href="tel:+380961111111">+38 096 111 11 11</a></li>
-        </ul>
+        </div>
     </header>
     <main>
-        <section>
-            <h1>Галерея наших работ</h1>
-            <ul class="list">
-                <li>
-                    <button type="button" class="btn-filter">Все</button>
-                </li>
-                <li>
-                    <button type="button" class="btn-filter">Веб-сайты</button>
-                </li>
-                <li>
-                    <button type="button" class="btn-filter">Приложения</button>
-                </li>
-                <li>
-                    <button type="button" class="btn-filter">Дизайн</button>
-                </li>
-                <li>
-                    <button type="button" class="btn-filter">Маркетинг</button>
-                </li>
-            </ul>
-            <ul class="list">
-                <li>
-                    <img src="./images/portfolio/1.jpg" alt="пример созданного сайта" width="370">
-                    <h2 class="title-glry">Технокряк</h2>
-                    <p class="text-glry">Веб-сайт</p>
-                </li>
-                <li>
-                    <img src="./images/portfolio/2.jpg" alt="баскетболисты клуюов New Orlean и Golden Star" width="370">
-                    <h2 class="title-glry">Постер New Orlean vs Golden Star</h2>
-                    <p class="text-glry">Дизайн</p>
-                </li>
-                <li>
-                    <img src="./images/portfolio/3.jpg" alt="логотип приложения в виде рыбы" width="370">
-                    <h2 class="title-glry">Ресторан Seafood</h2>
-                    <p class="text-glry"> Приложение</p>
-                </li>
-                <li>
-                    <img src="./images/portfolio/4.jpg" alt="наушники" width="370">
-                    <h2 class="title-glry">Проект Prime</h2>
-                    <p class="text-glry">Маркетинг</p>
-                </li>
-                <li>
-                    <img src="./images/portfolio/5.jpg" alt="картинка с двумя коробками" width="370">
-                    <h2 class="title-glry">Проект Boxes</h2>
-                    <p class="text-glry">Приложение</p>
-                </li>
-                <li>
-                    <img src="./images/portfolio/6.jpg" alt="пример созданного сайта" width="370">
-                    <h2 class="title-glry">Inspiration has no Borders</h2>
-                    <p class="text-glry">Веб-сайт</p>
-                </li>
-                <li>
-                    <img src="./images/portfolio/7.jpg" alt="разворот журнала" width="370">
-                    <h2 class="title-glry">Издание Limited Edition</h2>
-                    <p class="text-glry">Дизайн</p>
-                </li>
-                <li>
-                    <img src="./images/portfolio/8.jpg" alt="бирка компании LAB" width="370">
-                    <h2 class="title-glry">Проект LAB</h2>
-                    <p class="text-glry">Маркетинг</p>
-                </li>
-                <li>
-                    <img src="./images/portfolio/9.jpg" alt="процесс разработки приложения" width="370">
-                    <h2 class="title-glry">Growing Business</h2>
-                    <p class="text-glry">Приложение</p>
-                </li>
-            </ul>
+        <section class="section">
+            <div class="container">
+                <h1>Галерея наших работ</h1>
+                <ul class="list btn-list">
+                    <li class="item">
+                        <button type="button" class="btn-filter">Все</button>
+                    </li>
+                    <li class="item">
+                        <button type="button" class="btn-filter">Веб-сайты</button>
+                    </li>
+                    <li class="item">
+                        <button type="button" class="btn-filter">Приложения</button>
+                    </li>
+                    <li class="item">
+                        <button type="button" class="btn-filter">Дизайн</button>
+                    </li>
+                    <li class="item">
+                        <button type="button" class="btn-filter">Маркетинг</button>
+                    </li>
+                </ul>
+                <ul class=" flex-container list">
+                    <li class="flex-element">
+                        <img src="./images/portfolio/1.jpg" alt="пример созданного сайта" width="370">
+                        <h2 class="title-glry">Технокряк</h2>
+                        <p class="text-glry">Веб-сайт</p>
+                    </li>
+                    <li class="flex-element">
+                        <img src="./images/portfolio/2.jpg" alt="баскетболисты клубов New Orlean и Golden Star" width="370">
+                        <h2 class="title-glry">Постер New Orlean vs Golden Star</h2>
+                        <p class="text-glry">Дизайн</p>
+                    </li>
+                    <li class="flex-element">
+                        <img src="./images/portfolio/3.jpg" alt="логотип приложения в виде рыбы" width="370">
+                        <h2 class="title-glry">Ресторан Seafood</h2>
+                        <p class="text-glry"> Приложение</p>
+                    </li>
+                    <li class="flex-element">
+                        <img src="./images/portfolio/4.jpg" alt="наушники" width="370">
+                        <h2 class="title-glry">Проект Prime</h2>
+                        <p class="text-glry">Маркетинг</p>
+                    </li>
+                    <li class="flex-element">
+                        <img src="./images/portfolio/5.jpg" alt="картинка с двумя коробками" width="370">
+                        <h2 class="title-glry">Проект Boxes</h2>
+                        <p class="text-glry">Приложение</p>
+                    </li>
+                    <li class="flex-element">
+                        <img src="./images/portfolio/6.jpg" alt="пример созданного сайта" width="370">
+                        <h2 class="title-glry">Inspiration has no Borders</h2>
+                        <p class="text-glry">Веб-сайт</p>
+                    </li>
+                    <li class="flex-element">
+                        <img src="./images/portfolio/7.jpg" alt="разворот журнала" width="370">
+                        <h2 class="title-glry">Издание Limited Edition</h2>
+                        <p class="text-glry">Дизайн</p>
+                    </li>
+                    <li class="flex-element">
+                        <img src="./images/portfolio/8.jpg" alt="бирка компании LAB" width="370">
+                        <h2 class="title-glry">Проект LAB</h2>
+                        <p class="text-glry">Маркетинг</p>
+                    </li>
+                    <li class="flex-element">
+                        <img src="./images/portfolio/9.jpg" alt="процесс разработки приложения" width="370">
+                        <h2 class="title-glry">Growing Business</h2>
+                        <p class="text-glry">Приложение</p>
+                    </li>
+                </ul>
+            </div>
         </section>
     </main>
     <footer>
-        <a class="link logo" href="./index.html"> <span class="logo-clr">Web</span><span class="logo">Studio</span></a>
-        <address class="address title">
-            <ul class="list">
-                <li><a class="link" href="https://goo.gl/maps/ucCvVDqqTp9hVQsA9" target="_blank"
-                        rel="noopener noreferrer">г. Киев, пр-т Леси Украинки, 26</a></li>
-                <li><a class="link" href="mailto:info@example.com">info@example.com</a></li>
-                <li><a class="link" href="tel:+380991111111">+38 099 111 11 11</a></li>
-            </ul>
-        </address>
+        <div class="container">
+            <a class="link logo" href="./index.html"> <span class="logo-clr">Web</span><span class="logo">Studio</span></a>
+            <address class="address title">
+                <ul class="list">
+                    <li><a class="link" href="https://goo.gl/maps/ucCvVDqqTp9hVQsA9" target="_blank" rel="noopener noreferrer">г.
+                            Киев, пр-т Леси Украинки, 26</a></li>
+                    <li><a class="link" href="mailto:info@example.com">info@example.com</a></li>
+                    <li><a class="link" href="tel:+380991111111">+38 099 111 11 11</a></li>
+                </ul>
+            </address>
+        </div>
     </footer>
 </body>
 </html>
