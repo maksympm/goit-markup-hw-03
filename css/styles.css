@@ -19,6 +19,17 @@ body {
   letter-spacing: 0.03em;
   color: var(--main-text-color);
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin-bottom: 0;
+  margin-top: 0;
+}
 
 .container {
   width: 1200px;
@@ -26,7 +37,16 @@ body {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  outline: 2px solid tomato;
+}
+.footer-container {
+  border-top: 1px solid transparent;
+  padding-bottom: 60px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .list {
@@ -40,6 +60,10 @@ body {
   align-items: center;
 }
 
+.header-border {
+  border-bottom: 1px solid #ececec;
+}
+
 .logo {
   font-family: var(--logo-font);
   font-weight: 700;
@@ -47,6 +71,28 @@ body {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--title-color);
+}
+
+.logo-footer {
+  display: flex;
+  align-items: center;
+
+  margin-top: 59px;
+  /* padding-bottom: 20px; */
+
+  font-family: var(--logo-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--title-color);
+}
+
+.logo-clr-footer {
+  color: var(--accent-color);
+  display: block;
+  /* margin-top: 60px;
+  padding-bottom: 20px; */
 }
 
 .logo-clr {
@@ -72,6 +118,17 @@ body {
   color: var(--accent-color);
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .contact-links {
   margin-left: auto;
   display: flex;
@@ -95,6 +152,10 @@ body {
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
+}
+
+.section-our-work {
+  padding-top: 0;
 }
 
 .site-nav {
@@ -123,21 +184,20 @@ body {
 
 .hero {
   text-align: center;
-  background-color: var(--dark-bg);
-  padding-top: 200px;
-  padding-bottom: 200px;
 }
 
 .hero-title {
+  padding-top: 200px;
+  width: 696px;
   margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 0;
-  color: var(--title-alt-color);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  outline: 2px solid tomato;
 }
 
 .btn {
@@ -155,7 +215,12 @@ body {
   background-color: var(--accent-color);
 }
 
+.btn-position {
+  margin-bottom: 200px;
+}
+
 .btn-filter {
+  border: none;
   min-width: 73px;
   display: inline-block;
   text-align: center;
@@ -178,7 +243,16 @@ body {
 
 .btn-list {
   display: flex;
-  align-items: center;
+  margin-bottom: 50px;
+  justify-content: center;
+}
+
+.btn-list .item {
+  margin-right: 8px;
+}
+
+.btn-list .item:last-child {
+  margin-right: 0;
 }
 
 .section-title {
@@ -193,9 +267,13 @@ body {
 
 .feature-list {
   display: flex;
+  /* flex-wrap: wrap; */
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+}
+.feature-list .item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .feature-list .title {
@@ -217,6 +295,10 @@ body {
   text-transform: none;
 }
 
+.feature-list .item {
+  width: 270px;
+}
+
 .img-list {
   display: flex;
   margin-top: 50px;
@@ -232,32 +314,50 @@ body {
   color: var(--title-color);
 }
 
-.tam-img {
+.team-img {
   margin-top: 50px;
   margin-bottom: 0;
+  text-align: center;
 }
 
 .team-descr {
   margin-top: 10px;
   margin-bottom: 0;
-  padding-bottom: 30px;
+  /* padding-bottom: 30px; */
   font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
   color: var(--main-text-color);
 }
 
+.container-team {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container-team .item:nth-child(4n) {
+  margin-right: 0;
+}
+
+.container-team .item {
+  width: calc((100% - 90px) / 4);
+  margin-right: 30px;
+  /* margin-bottom: 30px; */
+  padding-bottom: 30px;
+}
+
 .flex-container {
   display: flex;
   flex-wrap: wrap;
-  background-color: teal;
+  /* background-color: teal; */
 }
 
 .flex-element {
   width: calc((100% - 60px) / 3);
   margin-right: 30px;
   margin-bottom: 30px;
-  background-color: tomato;
+  border: 1px solid #eeeeee;
+  padding-bottom: 20px;
 }
 
 .flex-element:nth-child(3n) {
@@ -274,15 +374,30 @@ body {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--title-color);
+  margin-top: 20px;
+  margin-bottom: 0;
+  margin-left: 24px;
 }
 .text-glry {
   font-size: 16px;
+  margin-top: 4px;
+  margin-left: 24px;
   line-height: 1.88;
 }
 
 .address {
+  margin-top: 20px;
   font-style: inherit;
   font-weight: normal;
   font-size: 14px;
   line-height: 1.71;
+}
+
+.address .list li:first-child {
+  color: var(--title-alt-color);
+  margin-top: 0;
+}
+
+.address .list li {
+  margin-top: 9px;
 }
